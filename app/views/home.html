@@ -1,1 +1,18 @@
-{{message}}
+
+
+<div>
+	<input ng-model="searchCriteria" /> <input type="button" class="btn default" value="Søk" ng-click="doSearch()" />
+</div>
+
+<ul>
+
+	<li><a href="#/city/Norge/Akershus/Skedsmo/Lillestrøm">Lillestrøm</a></li>
+	<li><a href="#/city/Norge/Akershus/Skedsmo/Brånås">Hjemme</a></li>
+</ul>
+
+<pre>{{searchResult | json}}</pre>
+
+
+<forecast country="Norge" fylke="Akershus" kommune="Skedsmo" sted="Lillestrøm" />
+
+
